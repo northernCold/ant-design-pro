@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,6 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <Routes>
+        <Route path="/" element={BasicLayout}></Route>
+      </Routes>
     </div>
   );
 }
